@@ -13,13 +13,14 @@ protocol.registerSchemesAsPrivileged([
 async function createWindow() {
   // Create the browser window.
   const win = new BrowserWindow({
-    width: 180,
-    height: 80,
+    width: 160,
+    height: 85,
     alwaysOnTop: true,
     skipTaskbar: true,
     autoHideMenuBar: true,
     titleBarStyle: "hidden",
     frame: false,
+    transparent: true,
     webPreferences: {
 
       // Use pluginOptions.nodeIntegration, leave this alone
@@ -39,7 +40,6 @@ async function createWindow() {
     win.loadURL('app://./index.html')
   }
   win.setAlwaysOnTop(true, 'screen');
-  win.webContents.openDevTools()
 
 }
 

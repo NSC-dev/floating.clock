@@ -24,12 +24,15 @@ export default {
     this.setTime()
   }
 }
+//  text-shadow: -1px -1px 0 #2f3437, 1px -1px 0 #2f3437, -1px 1px 0 #2f3437, 1px 1px 0 #2f3437;
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 h1{
+  color: #f4f6f8;
+  background: #2f3437;
+  border-radius: 25px;
   maring: 0;
-  padding: 0;
+  padding: 5px;
 }
 </style>
